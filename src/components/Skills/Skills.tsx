@@ -16,6 +16,7 @@ import Github from '@/assets/tech-stack/github-5.svg'
 import Git from '@/assets/tech-stack/git.svg'
 import Postman from '@/assets/tech-stack/postman.svg'
 import Vscode from '@/assets/tech-stack/visual-studio-code.svg'
+import TablePlus from '@/assets/tech-stack/tableplus.png'
 
 
 
@@ -40,7 +41,8 @@ const Skills = () => {
         { tool: 'Git', icon: Git},
         { tool: 'Github', icon: Github},
         { tool: 'Postman', icon: Postman},
-        { tool: 'Vscode', icon: Vscode}
+        { tool: 'Vscode', icon: Vscode},
+        { tool: 'TablePlus', icon: TablePlus},
     ]
   return (
     <section id="skills" className='py-20 px-5 bg-gray-900'>
