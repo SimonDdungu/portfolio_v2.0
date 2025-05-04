@@ -20,7 +20,7 @@ const Hero = () => {
 
             <div className="flex flex-row gap-5 items-center text-sm">
 
-                <Link href="#Projects" className="px-4 py-2 bg-(--dark-blue) text-gray-200 rounded-lg">
+                <Link href="#projects" className="px-4 py-2 bg-(--dark-blue) text-gray-200 rounded-lg">
                 View Projects
                 </Link>
 
