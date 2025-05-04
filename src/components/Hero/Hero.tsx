@@ -13,7 +13,7 @@ const Hero = () => {
 
             <div className="text-lg md:text-2xl mb-8 tracking-widest uppercase font-bold">
                 <p>
-                Developing websites and applications that are user-friendly, responsive and and SEO-optimized, 
+                Developing websites and applications that are user-friendly, responsive and SEO-optimized, 
                 ensuring ease of use and discoverability.
                 </p>
             </div>

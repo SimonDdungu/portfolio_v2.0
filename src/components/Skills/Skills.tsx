@@ -43,7 +43,7 @@ const Skills = () => {
         { tool: 'Vscode', icon: Vscode}
     ]
   return (
-    <section id="Skills" className='py-20 px-5 bg-gray-900'>
+    <section id="skills" className='py-20 px-5 bg-gray-900'>
         <div className="md:max-w-5xl mx-auto">
             <div className="mb-10 md:mb-20">
                 <h2 className='text-3xl text-center font-semibold tracking-wide'>My Skills</h2>

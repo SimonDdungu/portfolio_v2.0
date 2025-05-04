@@ -24,9 +24,9 @@ const Projects = () => {
     ]
 
   return (
-    <section id="Projects" className='py-20 px-5 bg-gray-950'>
+    <section id="projects" className='py-20 px-5 bg-gray-950'>
         <div className="md:max-w-5xl mx-auto">
-            <div className="mb-20">
+            <div className="mb-10">
                 <h2 className='text-3xl text-center font-semibold tracking-wide'>My Projects</h2>
             </div>
 
@@ -44,7 +44,7 @@ const Projects = () => {
                             <div className='mb-5'>
                                 <h5 className='mb-3 font-semibold capitalize pb-2 border-b-2'>{project.name}</h5>
 
-                                <p className='text-sm font-light tracking-wide md:h-20'>
+                                <p className='text-sm font-light tracking-wide md:h-23 lg:h-20'>
                                     {project.description}
                                 </p>
                             </div>
