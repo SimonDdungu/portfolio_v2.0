@@ -24,7 +24,7 @@ const Hero = () => {
                 View Projects
                 </Link>
 
-                <Link href="#" className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
+                <Link href="#contact" className="px-4 py-2 bg-gray-200 text-gray-800 rounded-lg">
                 Contact Me
                 </Link>
 

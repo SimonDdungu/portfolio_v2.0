@@ -6,11 +6,14 @@ import Typescript from '@/assets/tech-stack/typescript.svg'
 import Javascript from '@/assets/tech-stack/javascript.svg'
 import Tailwind from '@/assets/tech-stack/tailwind-css.svg'
 
+import NodeJs from '@/assets/tech-stack/nodejs-1.svg'
+import ExpressJs from '@/assets/tech-stack/express-3.png'
 import Python from '@/assets/tech-stack/python.svg'
 import Django from '@/assets/tech-stack/django-1.svg'
 import Mysql from '@/assets/tech-stack/mysql.svg'
 import Postgresql from '@/assets/tech-stack/postgresql.svg'
 import Sqlite from '@/assets/tech-stack/sqlite-4.svg'
+import MongoDB from '@/assets/tech-stack/mongodb-2.svg'
 
 import Github from '@/assets/tech-stack/github-5.svg'
 import Git from '@/assets/tech-stack/git.svg'
@@ -30,8 +33,11 @@ const Skills = () => {
     ]
 
     const Backend = [
+        { skill: 'NodeJs', icon: NodeJs},
+        { skill: 'ExpressJs', icon: ExpressJs},
         { skill: 'Python', icon: Python},
         { skill: 'Django', icon: Django},
+        { skill: 'MongoDB', icon: MongoDB},
         { skill: 'SQLite', icon: Sqlite},
         { skill: 'MySQL', icon: Mysql},
         { skill: 'PostgreSQL', icon: Postgresql},
