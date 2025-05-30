@@ -1,7 +1,6 @@
 "use client"
 import Link from "next/link"
 import { useEffect, useState } from "react"
-import { usePathname } from "next/navigation"
 import { BiMenu, BiX } from "react-icons/bi"
 
 const Navbar = () => {
@@ -9,7 +8,6 @@ const Navbar = () => {
   const [isVisible, setIsVisible] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [ActiveSectionId, setActiveSectionId] = useState('')
-  const pathname = usePathname()
 
   useEffect(() => {
     let lastscroll = window.scrollY

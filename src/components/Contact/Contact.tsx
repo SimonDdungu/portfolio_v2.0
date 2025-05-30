@@ -38,11 +38,9 @@ const Contact = () => {
       setloading(false)
 
     } catch (error) {
-
+      console.log(error)
       setloading(false)
-
     }
-
   }
 
   return (

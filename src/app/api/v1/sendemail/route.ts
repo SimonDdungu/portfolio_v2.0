@@ -1,4 +1,3 @@
-import * as React from "react";
 import { NextResponse, NextRequest } from "next/server";
 import UserEmail from "@/components/Contact/Email/UserEmail";
 import { Resend } from "resend";
@@ -10,7 +9,7 @@ console.log(process.env.EMAIL_KEY)
 const resend = new Resend(process.env.EMAIL_KEY)
 
 
-export async function POST(req: NextRequest, res: NextResponse){
+export async function POST(req: NextRequest){
     console.log("HITTING THIS API")
     console.log(process.env.EMAIL_KEY)
 
@@ -33,10 +32,4 @@ export async function POST(req: NextRequest, res: NextResponse){
         console.log("Failed: ", error)
         return NextResponse.json({success: false, error: error})
     }
-}
-
-export async function GET() {
-  console.log('👀 REACHED GET HANDLER');
-  console.log(process.env.EMAIL_KEY);
-  return NextResponse.json({ msg: 'GET works' });
 }

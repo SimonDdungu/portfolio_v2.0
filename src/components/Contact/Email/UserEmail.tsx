@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Body, Html, Container, Tailwind, Text, Button, Head, Heading} from "@react-email/components"
+import { Body, Html, Container, Tailwind, Text, Head, Heading} from "@react-email/components"
 
 type EmailProps = {
   firstName: string,
@@ -20,10 +20,10 @@ const UserEmail = ({firstName, lastName, email, message}: EmailProps) => {
               Thanks so much for reaching out through my portfolio! I really appreciate you taking the time to send a message.
             </Text>
             <Text className="text-gray-700">
-              I've successfully received your inquiry and will be sure to review it soon. I usually get back to messages within 1-2 business days.
+              {`I've successfully received your inquiry and will be sure to review it soon. I usually get back to messages within 1-2 business days.`}
             </Text>
             <Container className='bg-gray-300 rounded-lg p-5 mx-auto'>
-              <Text>Here's a quick recap of what you sent:</Text>
+              <Text>{`Here's a quick recap of what you sent:`}</Text>
               <Text>Your Name: {firstName} {lastName}</Text>
               <Text>Your Email: {email}</Text>
               <Text>Your Message:</Text>
