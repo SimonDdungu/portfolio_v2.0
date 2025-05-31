@@ -59,7 +59,7 @@ const Navbar = () => {
   useEffect(() => {
 
     const isMobile = window.matchMedia('(max-width: 768px)').matches; // Adjust breakpoint as needed
-    const thresholdValue = isMobile ? 0.6 : 0.7;
+    const thresholdValue = isMobile ? 0.4 : 0.7;
 
     // IntersectionObserver for sections
     const observer = new IntersectionObserver(
