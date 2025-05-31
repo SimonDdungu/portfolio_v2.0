@@ -11,6 +11,8 @@ const Navbar = () => {
   const MobileMenuButton = useRef<HTMLButtonElement>(null)
   const [ActiveSectionId, setActiveSectionId] = useState('')
 
+   
+
 
   useEffect(() => {
 
@@ -33,6 +35,7 @@ const Navbar = () => {
     let lastscroll = window.scrollY
 
     const handleScroll = () => {
+      setIsMobileMenuOpen(false)
       const currentscroll = window.scrollY
 
       if (currentscroll > lastscroll && currentscroll > 20) {
@@ -54,16 +57,21 @@ const Navbar = () => {
   }, [isVisible])
 
   useEffect(() => {
+
+    const isMobile = window.matchMedia('(max-width: 768px)').matches; // Adjust breakpoint as needed
+    const thresholdValue = isMobile ? 0.6 : 0.7;
+
     // IntersectionObserver for sections
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             setActiveSectionId(entry.target.id)
+            console.log(ActiveSectionId)
           }
         })
       },
-      { rootMargin: '0px', threshold: 0.8 }
+      { rootMargin: '0px', threshold: thresholdValue }
     )
 
     // Observe all sections with an id
