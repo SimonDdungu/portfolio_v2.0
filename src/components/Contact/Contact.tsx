@@ -32,6 +32,7 @@ const Contact = () => {
 
     try {
 
+      console.log(formspree)
       await axios.post(formspree, values, { headers: {'Content-Type': 'application/json'}})
 
       actions.resetForm()

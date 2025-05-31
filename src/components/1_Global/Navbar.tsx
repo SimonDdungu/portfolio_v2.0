@@ -1,13 +1,33 @@
 "use client"
 import Link from "next/link"
-import { useEffect, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { BiMenu, BiX } from "react-icons/bi"
 
 const Navbar = () => {
 
   const [isVisible, setIsVisible] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const MobileMenu = useRef<HTMLDivElement>(null)
+  const MobileMenuButton = useRef<HTMLButtonElement>(null)
   const [ActiveSectionId, setActiveSectionId] = useState('')
+
+
+  useEffect(() => {
+
+    const handleClickOutside = (e: MouseEvent) => {
+      if (MobileMenu.current && !MobileMenu.current.contains(e.target as Node) || MobileMenuButton.current && MobileMenuButton.current.contains(e.target as Node)) {
+        setIsMobileMenuOpen(false)
+      }
+    }
+
+
+    document.addEventListener("click", handleClickOutside)
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside)
+    }
+  }, [isMobileMenuOpen])
+
 
   useEffect(() => {
     let lastscroll = window.scrollY
@@ -23,13 +43,17 @@ const Navbar = () => {
       lastscroll = currentscroll
     }
 
-
     window.addEventListener("scroll", handleScroll)
 
-    document.documentElement.style.scrollBehavior = 'smooth'
 
 
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
 
+    }
+  }, [isVisible])
+
+  useEffect(() => {
     // IntersectionObserver for sections
     const observer = new IntersectionObserver(
       (entries) => {
@@ -47,15 +71,16 @@ const Navbar = () => {
       observer.observe(section)
     })
 
+    document.documentElement.style.scrollBehavior = 'smooth'
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
+      observer.disconnect()
 
       document.documentElement.style.scrollBehavior = 'auto'
-
-      observer.disconnect()
     }
-  }, [isVisible])
+  }, [])
+
+
 
 
 
@@ -92,7 +117,7 @@ const Navbar = () => {
         </div>
 
         <div className="lg:hidden flex items-center ml-auto">
-          <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden flex flex-row items-center justify-center p-2 rounded-md">
+          <button ref={MobileMenuButton} onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="lg:hidden flex flex-row items-center justify-center p-2 rounded-md">
             {isMobileMenuOpen ? (<BiX className="text-3xl" />) : (<BiMenu className="text-3xl" />)}
           </button>
         </div>
@@ -100,16 +125,17 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden  font-light text-sm ${isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"} transition-all duration-300 ease-in-out overflow-hidden `}>
+      <div ref={MobileMenu} className={`lg:hidden  font-light text-sm ${isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"} transition-all duration-300 ease-in-out overflow-hidden `}>
         <div className="space-y-1 pt-2 pb-3">
           {navLinks.map((link) => {
             const isActive = ActiveSectionId === link.id
-            return(
-            <Link key={link.href} href={link.href}
-              className={`pl-2 py-2 ${isActive ? "bg-(--dark-blue) text-white" : "text-gray-700"} block rounded-lg`}>
-              {link.label}
-            </Link>
-          )})}
+            return (
+              <Link key={link.href} href={link.href}
+                className={`pl-2 py-2 ${isActive ? "bg-(--dark-blue) text-white" : "text-gray-700"} block rounded-lg`}>
+                {link.label}
+              </Link>
+            )
+          })}
         </div>
       </div>
     </nav>
