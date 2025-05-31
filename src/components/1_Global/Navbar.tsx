@@ -58,8 +58,21 @@ const Navbar = () => {
 
   useEffect(() => {
 
-    const isMobile = window.matchMedia('(max-width: 768px)').matches; // Adjust breakpoint as needed
-    const thresholdValue = isMobile ? 0.4 : 0.7;
+    const isMobile = window.matchMedia('(max-width: 768px)').matches;
+    const isTablet = window.matchMedia('(min-height: 1070px)').matches;
+    let thresholdValue: number;
+    let rootMarginValue: string;
+
+    if(isMobile){
+      thresholdValue = 0.2
+      rootMarginValue = '-25% 0px'
+    }else if(isTablet){
+      thresholdValue = 0.4
+      rootMarginValue = '-70px 0px -38% 0px'
+    }else {
+      thresholdValue = 0.7
+      rootMarginValue = '0px'
+    }
 
     // IntersectionObserver for sections
     const observer = new IntersectionObserver(
@@ -67,11 +80,10 @@ const Navbar = () => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             setActiveSectionId(entry.target.id)
-            console.log(ActiveSectionId)
           }
         })
       },
-      { rootMargin: '0px', threshold: thresholdValue }
+      { rootMargin: rootMarginValue, threshold: thresholdValue }
     )
 
     // Observe all sections with an id
