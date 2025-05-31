@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link"
+import Image from "next/image"
 import { useEffect, useRef, useState } from "react"
 import { BiMenu, BiX } from "react-icons/bi"
+import Logo from "@/assets/Logos/logo-initials-upscaled.jpeg"
 
 const Navbar = () => {
 
@@ -11,7 +13,7 @@ const Navbar = () => {
   const MobileMenuButton = useRef<HTMLButtonElement>(null)
   const [ActiveSectionId, setActiveSectionId] = useState('')
 
-   
+
 
 
   useEffect(() => {
@@ -63,13 +65,13 @@ const Navbar = () => {
     let thresholdValue: number;
     let rootMarginValue: string;
 
-    if(isMobile){
+    if (isMobile) {
       thresholdValue = 0.2
       rootMarginValue = '-25% 0px'
-    }else if(isTablet){
+    } else if (isTablet) {
       thresholdValue = 0.4
       rootMarginValue = '-70px 0px -38% 0px'
-    }else {
+    } else {
       thresholdValue = 0.7
       rootMarginValue = '0px'
     }
@@ -120,8 +122,12 @@ const Navbar = () => {
 
       <div className="flex flex-row items-center">
 
-        <div>
-          <div>Logo</div>
+        <div className="flex flex-row gap-5 items-center">
+          <div className="w-15 h-15 md:w-20 md:h-20 rounded-full overflow-hidden">
+            <Image src={Logo} alt="Logo" className="w-full h-full object-cover" />
+          </div>
+
+          <span className="hidden xl:block capitalize text-base tracking-wider font-semibold">SIMON DDUNGU</span>
         </div>
 
         <div className="hidden lg:flex flex-row mx-auto justify-between items-center gap-15 font-light text-sm">
@@ -146,7 +152,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div ref={MobileMenu} className={`lg:hidden  font-light text-sm ${isMobileMenuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"} transition-all duration-300 ease-in-out overflow-hidden `}>
-        <div className="space-y-1 pt-2 pb-3">
+        <div className="space-y-1 pt-4 pb-3">
           {navLinks.map((link) => {
             const isActive = ActiveSectionId === link.id
             return (
