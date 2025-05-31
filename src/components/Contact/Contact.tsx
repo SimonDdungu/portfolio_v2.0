@@ -11,6 +11,8 @@ import ContactInputField from './ContactInputField'
 import ContactTextField from './ContactTextField'
 import Socials from "./Socials"
 
+import EmailDialog from "../1_Global/EmailDialog"
+
 interface contactvalues {
   first_name: string,
   last_name: string,
@@ -21,6 +23,8 @@ interface contactvalues {
 const Contact = () => {
 
   const [loading, setloading] = useState(false)
+  const [isDialogOpen, setisDialogOpen] = useState(false)
+  const [dialogMessage, setdialogMessage ] = useState("")
 
   //const email_api = `${process.env.NEXT_PUBLIC_EMAIL_API}/sendemail`
   //const email_api2 = `http://localhost:3000/api/v1/sendemail`
@@ -33,14 +37,23 @@ const Contact = () => {
     try {
 
       console.log(formspree)
-      await axios.post(formspree, values, { headers: {'Content-Type': 'application/json'}})
+      await axios.post(formspree, values, { headers: { 'Content-Type': 'application/json' } })
 
       actions.resetForm()
       setloading(false)
+      setdialogMessage("Email was successfully sent.")
+
+      setisDialogOpen(true)
 
     } catch (error) {
+
       console.log(error)
       setloading(false)
+
+      setdialogMessage("An Error occurred! Email was not sent. \nPlease Try again later.")
+
+      setisDialogOpen(true)
+
     }
   }
 
@@ -57,6 +70,8 @@ const Contact = () => {
         </div>
 
         <div className="mb-3 relative">
+
+          {isDialogOpen && <EmailDialog isDialogOpen={isDialogOpen} onOpenChange={setisDialogOpen} message={dialogMessage}/>}
 
           {loading && <Loading />}
 
