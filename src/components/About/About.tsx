@@ -11,7 +11,7 @@ const About = () => {
                     <p>
                         {`
                 My journey into coding began during my studies in Computer Science, where I discovered my passion for creating dynamic and
-                scalable web applications. Since then, I’ve been working with frameworks like Next.js, React, Tailwind, Node js and Django to build 
+                scalable web applications. Since then, I’ve been working with frameworks like Next.js, React, Tailwind, Node.js and Django to build 
                 projects that not only challenge me but also help me learn new concepts and technologies.
                 `}
                     </p>
