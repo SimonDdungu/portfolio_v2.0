@@ -15,8 +15,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Simon Ddungu",
-  description: "Simon Ddungu's portfolio website",
+  title: "Simon Ddungu Portfolio",
+  description: "I'm a full stack developer and computer science student. This site is where I share my projects, document what I'm learning, and talk a bit about who I am and where I want to go in tech.",
+  openGraph: {
+    title: "Simon's Portfolio",
+    description: "I'm a full stack developer and computer science student. This site is where I share my projects, document what I'm learning, and talk a bit about who I am and where I want to go in tech.",
+    url: "https://portfolio-v2-0-six.vercel.app/",
+    type: "website",
+    siteName: "Simon Ddungu Portfolio",
+  }
 };
 
 export default function RootLayout({
