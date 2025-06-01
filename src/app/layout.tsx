@@ -23,6 +23,14 @@ export const metadata: Metadata = {
     url: "https://portfolio-v2-0-six.vercel.app/",
     type: "website",
     siteName: "Simon Ddungu Portfolio",
+    images: [
+      {
+        url: "https://portfolio-v2-0-six.vercel.app/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Simon's Portfolio"
+      }
+    ]
   }
 };
 
