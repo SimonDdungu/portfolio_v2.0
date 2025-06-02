@@ -122,13 +122,13 @@ const Navbar = () => {
 
       <div className="flex flex-row items-center">
 
-        <div className="flex flex-row gap-5 items-center">
+        <Link href="/" className="flex flex-row gap-5 items-center">
           <div className="w-15 h-15 md:w-20 md:h-20 rounded-full overflow-hidden">
             <Image src={Logo} alt="Logo" className="w-full h-full object-cover" />
           </div>
 
           <span className="hidden xl:block capitalize text-base tracking-wider font-semibold">SIMON DDUNGU</span>
-        </div>
+        </Link>
 
         <div className="hidden lg:flex flex-row mx-auto justify-between items-center gap-15 font-light text-sm">
           {navLinks.map((link) => {
