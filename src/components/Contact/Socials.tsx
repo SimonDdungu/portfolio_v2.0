@@ -14,7 +14,7 @@ const Socials = () => {
 
         <div className="flex flex-row gap-10 flex-wrap items-center justify-start">
             <div className="flex gap-3 items-center">
-                <Image src={Github} alt="Github" className="w-14 object-contain" />
+                <Image src={Github} alt="Github" className="w-10 md:w-14 object-contain" />
                 <Link href="https://github.com/SimonDdungu" target="_blank" 
                 className="text-sm hover:underline transition-all ease-in">SimonDdungu</Link>
             </div>
