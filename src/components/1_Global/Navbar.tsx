@@ -115,7 +115,7 @@ const Navbar = () => {
   ]
 
   return (
-    <nav className={`fixed top-0 left-0 right-0 w-screen z-100 px-5 md:px-20 py-3 md:py-5  
+    <nav className={`fixed top-0 left-0 right-0 w-screen z-100 px-5 md:px-20 py-3  
     items-center ${isVisible ? "translate-y-0" : "-translate-y-full"} 
     transition-transform duration-300 ease-in-out bg-black/80 backdrop-blur-sm`}>
 
@@ -123,7 +123,7 @@ const Navbar = () => {
       <div className="flex flex-row items-center">
 
         <Link href="/" className="flex flex-row gap-5 items-center">
-          <div className="w-15 h-15 md:w-20 md:h-20 rounded-full overflow-hidden">
+          <div className="w-15 h-15 rounded-full overflow-hidden">
             <Image src={Logo} alt="Logo" className="w-full h-full object-cover" />
           </div>
 

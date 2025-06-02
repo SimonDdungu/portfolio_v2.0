@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import Link from "next/link"
-import Github from "../../../public/images/socials/github.svg"
+import Github from '@/assets/tech-stack/github-5.svg'
 import Linkedin from "../../../public/images/socials/linkedin.svg"
 import Gmail from "../../../public/images/socials/gmail.svg"
 
@@ -14,7 +14,7 @@ const Socials = () => {
 
         <div className="flex flex-row gap-10 flex-wrap items-center justify-start">
             <div className="flex gap-3 items-center">
-                <Image src={Github} alt="Github" className="w-10 object-contain" />
+                <Image src={Github} alt="Github" className="w-14 object-contain" />
                 <Link href="https://github.com/SimonDdungu" target="_blank" 
                 className="text-sm hover:underline transition-all ease-in">SimonDdungu</Link>
             </div>
