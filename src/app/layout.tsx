@@ -43,6 +43,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <meta name="apple-mobile-web-app-title" content="Simon's Portfolio" />
+        <meta name="theme-color" content="black"/>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-black`}
