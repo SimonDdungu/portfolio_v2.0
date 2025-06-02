@@ -21,6 +21,7 @@ import Postman from '@/assets/tech-stack/postman.svg'
 import Vscode from '@/assets/tech-stack/visual-studio-code.svg'
 import TablePlus from '@/assets/tech-stack/tableplus.png'
 import Ngrok from '@/assets/tech-stack/ngrok3.svg'
+import DBeaver from '@/assets/tech-stack/DBeaver.svg'
 
 
 
@@ -48,9 +49,10 @@ const Skills = () => {
         { tool: 'Git', icon: Git},
         { tool: 'Github', icon: Github},
         { tool: 'Postman', icon: Postman},
-        { tool: 'Vscode', icon: Vscode},
+        { tool: 'Ngrok', icon: Ngrok},
+        { tool: 'DBeaver', icon: DBeaver},
         { tool: 'TablePlus', icon: TablePlus},
-        { tool: 'Ngrok', icon: Ngrok}
+        { tool: 'Vscode', icon: Vscode},
     ]
   return (
     <section id="skills" className='py-20 px-5 bg-gray-900'>
