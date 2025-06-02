@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     siteName: "Simon Ddungu Portfolio",
     images: [
       {
-        url: "https://portfolio-v2-0-six.vercel.app/opengraph-image.png",
+        url: "https://portfolio-v2-0-six.vercel.app/simons-og-image.png",
         width: 1200,
         height: 630,
         alt: "Simon's Portfolio"
