@@ -1,6 +1,8 @@
 import React from 'react'
 import Agrixapp from '../../../public/images/projects/Agrixapp.png'
 import PCA from '../../../public/images/projects/Pivosoftcodingacademy.png'
+import Brueilex from '../../../public/images/projects/Brueilexgroup.png'
+import Vinniq from '../../../public/images/projects/Vinniqmedia.png'
 import { SiNextdotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub, SiTypescript } from 'react-icons/si'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -15,12 +17,27 @@ const Projects = () => {
         link: "https://agrixapp.com",
         },
         {
+        image: Brueilex,
+        name: "Brueilex Group", 
+        description: "Brueilex Group offers reliable water and energy solutions for homes, farms and businesses in Uganda. From irrigation systems, solar energy, boreholes, generators to water pumping ensuring efficiency, sustainability and consistent performance.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://brueilexgroup.com",
+        },
+        {
+        image: Vinniq,
+        name: "Vinniq Media (in development)", 
+        description: "Vinniq Media provides professional photography and videography for portraits, events and media productions creating beautiful, high-quality images and videos for every occasion, from personal projects to commercial ventures.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://vinniq-media.pivosoft.com",
+        },
+        {
         image: PCA,
-        name: "Pivosoft Coding Academy", 
+        name: "Pivosoft Coding Academy (being refactored)", 
         description: "Pivosoft Coding Academy is a free online mentorship platform helping beginners learn web development, mobile app development, backend and version control, with guidance from experienced mentors.",
         techStack: [SiNextdotjs, SiJavascript, SiTailwindcss, SiGit, SiGithub],
         link: "https://academy.pivosoft.com",
         },
+        
     ]
 
   return (

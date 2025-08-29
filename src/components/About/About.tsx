@@ -19,7 +19,7 @@ const About = () => {
                         {`Currently, I’m pursuing a Bachelor's degree of science in Computer Science. This has given me a deeper understanding of
                 algorithms, data structures and the underlying principles of software development. I’m also actively learning new tools and
                 frameworks, including Laravel, React Native and Docker, as I work towards becoming a well-rounded developer capable of handling
-                both frontend and backend challenges. I’m also diving into Machine Learning, exploring its potential to build automated and intelligent applications.`}
+                both frontend and backend challenges. I’m also diving into Data Science and Machine Learning, exploring its potential to build automated and intelligent applications.`}
                     </p>
                     <p>
                         {`
