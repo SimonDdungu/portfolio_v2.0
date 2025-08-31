@@ -28,7 +28,7 @@ const Projects = () => {
         name: "Vinniq Media (in development)", 
         description: "Vinniq Media provides professional photography and videography for portraits, events and media productions creating beautiful, high-quality images and videos for every occasion, from personal projects to commercial ventures.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
-        link: "https://vinniq-media.pivosoft.com",
+        link: "https://vinniqmedia.com",
         },
         {
         image: PCA,
