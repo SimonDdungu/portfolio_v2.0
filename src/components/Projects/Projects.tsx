@@ -25,14 +25,14 @@ const Projects = () => {
         },
         {
         image: Vinniq,
-        name: "Vinniq Media (in development)", 
+        name: "Vinniq Media", 
         description: "Vinniq Media provides professional photography and videography for portraits, events and media productions creating beautiful, high-quality images and videos for every occasion, from personal projects to commercial ventures.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://vinniqmedia.com",
         },
         {
         image: PCA,
-        name: "Pivosoft Coding Academy (being refactored)", 
+        name: "Pivosoft Coding Academy", 
         description: "Pivosoft Coding Academy is a free online mentorship platform helping beginners learn web development, mobile app development, backend and version control, with guidance from experienced mentors.",
         techStack: [SiNextdotjs, SiJavascript, SiTailwindcss, SiGit, SiGithub],
         link: "https://academy.pivosoft.com",
