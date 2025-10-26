@@ -3,6 +3,7 @@ import Agrixapp from '../../../public/images/projects/Agrixapp.png'
 import PCA from '../../../public/images/projects/Pivosoftcodingacademy.png'
 import Brueilex from '../../../public/images/projects/Brueilexgroup.png'
 import Vinniq from '../../../public/images/projects/Vinniqmedia.png'
+import ISBATGPA from "../../../public/images/projects/IsbatGPACalculator.png"
 import { SiNextdotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub, SiTypescript } from 'react-icons/si'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -37,7 +38,13 @@ const Projects = () => {
         techStack: [SiNextdotjs, SiJavascript, SiTailwindcss, SiGit, SiGithub],
         link: "https://academy.pivosoft.com",
         },
-        
+        {
+        image: ISBATGPA,
+        name: "ISBAT GPA Calculator", 
+        description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://isbat-gpa-calculator.vercel.app/",
+        },     
     ]
 
   return (
