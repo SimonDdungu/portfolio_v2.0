@@ -19,7 +19,8 @@ import Github from '@/assets/tech-stack/github-5.svg'
 import Git from '@/assets/tech-stack/git.svg'
 import Postman from '@/assets/tech-stack/postman.svg'
 import Vscode from '@/assets/tech-stack/visual-studio-code.svg'
-import TablePlus from '@/assets/tech-stack/tableplus.png'
+import Ubuntu from "@/assets/tech-stack/ubuntu-4.svg"
+
 import Ngrok from '@/assets/tech-stack/ngrok3.svg'
 import DBeaver from '@/assets/tech-stack/DBeaver.svg'
 
@@ -49,9 +50,9 @@ const Skills = () => {
         { tool: 'Git', icon: Git},
         { tool: 'Github', icon: Github},
         { tool: 'Postman', icon: Postman},
-        { tool: 'Ngrok', icon: Ngrok},
+       // { tool: 'Ngrok', icon: Ngrok},
         { tool: 'DBeaver', icon: DBeaver},
-        { tool: 'TablePlus', icon: TablePlus},
+        { tool: 'Ubuntu', icon: Ubuntu},
         { tool: 'Vscode', icon: Vscode},
     ]
   return (

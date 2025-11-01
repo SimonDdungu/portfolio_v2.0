@@ -122,7 +122,7 @@ const Navbar = () => {
 
       <div className="flex flex-row items-center">
 
-        <Link href="/" className="flex flex-row gap-5 items-center">
+        <Link href="/" rel="noopener noreferrer" className="flex flex-row gap-5 items-center">
           <div className="w-15 h-15 rounded-full overflow-hidden">
             <Image src={Logo} alt="Logo" className="w-full h-full object-cover" />
           </div>
@@ -134,7 +134,7 @@ const Navbar = () => {
           {navLinks.map((link) => {
             const isActive = ActiveSectionId === link.id
             return (
-              <Link key={link.href} href={link.href}
+              <Link key={link.href} href={link.href} rel="noopener noreferrer"
                 className={`px-5 py-2 rounded-2xl ${isActive ? "bg-(--dark-blue) text-white" : "text-gray-700"}`}>
                 {link.label}
               </Link>
@@ -156,7 +156,7 @@ const Navbar = () => {
           {navLinks.map((link) => {
             const isActive = ActiveSectionId === link.id
             return (
-              <Link key={link.href} href={link.href}
+              <Link key={link.href} href={link.href} rel="noopener noreferrer"
                 className={`pl-2 py-2 ${isActive ? "bg-(--dark-blue) text-white" : "text-gray-700"} block rounded-lg`}>
                 {link.label}
               </Link>

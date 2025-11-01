@@ -11,13 +11,6 @@ import Image from 'next/image'
 const Projects = () => {
     const projects = [
         {
-        image: Agrixapp,
-        name: "Agrix", 
-        description: "Agrix is an all-in-one platform that empowers farmers to sell produce, buy agro-inputs, access farming tips and track weather updates while allowing consumers to buy fresh, local food directly from the source.",
-        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
-        link: "https://agrixapp.com",
-        },
-        {
         image: Brueilex,
         name: "Brueilex Group", 
         description: "Brueilex Group offers reliable water and energy solutions for homes, farms and businesses in Uganda. From irrigation systems, solar energy, boreholes, generators to water pumping ensuring efficiency, sustainability and consistent performance.",
@@ -32,19 +25,27 @@ const Projects = () => {
         link: "https://vinniqmedia.com",
         },
         {
+        image: ISBATGPA,
+        name: "ISBAT GPA Calculator", 
+        description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://isbat-gpa-calculator.vercel.app/",
+        },
+        {
+        image: Agrixapp,
+        name: "Agrix", 
+        description: "Agrix is an all-in-one platform that empowers farmers to sell produce, buy agro-inputs, access farming tips and track weather updates while allowing consumers to buy fresh, local food directly from the source.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://agrixapp.com",
+        },  
+        
+        {
         image: PCA,
         name: "Pivosoft Coding Academy", 
         description: "Pivosoft Coding Academy is a free online mentorship platform helping beginners learn web development, mobile app development, backend and version control, with guidance from experienced mentors.",
         techStack: [SiNextdotjs, SiJavascript, SiTailwindcss, SiGit, SiGithub],
         link: "https://academy.pivosoft.com",
         },
-        {
-        image: ISBATGPA,
-        name: "ISBAT GPA Calculator", 
-        description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
-        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
-        link: "https://isbat-gpa-calculator.vercel.app/",
-        },     
     ]
 
   return (
@@ -84,7 +85,7 @@ const Projects = () => {
                             </div>
 
                             <div>
-                                <Link href={project.link} target="_blank" className='px-5 py-2 mt-5 bg-(--dark-blue) text-gray-200 rounded-lg
+                                <Link href={project.link} target="_blank" rel="noopener noreferrer" className='px-5 py-2 mt-5 bg-(--dark-blue) text-gray-200 rounded-lg
                                 hover:bg-blue-900 transition-all ease-in-out duration-300 '>
                                 Visit Website
                                 </Link>
