@@ -21,7 +21,7 @@ import Postman from '@/assets/tech-stack/postman.svg'
 import Vscode from '@/assets/tech-stack/visual-studio-code.svg'
 import Ubuntu from "@/assets/tech-stack/ubuntu-4.svg"
 
-import Ngrok from '@/assets/tech-stack/ngrok3.svg'
+//import Ngrok from '@/assets/tech-stack/ngrok3.svg'
 import DBeaver from '@/assets/tech-stack/DBeaver.svg'
 
 
