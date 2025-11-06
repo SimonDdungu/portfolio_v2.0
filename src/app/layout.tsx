@@ -20,12 +20,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Simon's Portfolio",
     description: "I'm a full stack developer and computer science student. This site is where I share my projects, document what I'm learning, and talk a bit about who I am and where I want to go in tech.",
-    url: "https://portfolio-v2-0-six.vercel.app/",
+    url: "https://simonddungu-portfolio.vercel.app/",
     type: "website",
     siteName: "Simon Ddungu Portfolio",
     images: [
       {
-        url: "https://portfolio-v2-0-six.vercel.app/simons-og-image.png",
+        url: "https://simonddungu-portfolio.vercel.app/simons-og-image.png",
         width: 1200,
         height: 630,
         alt: "Simon's Portfolio"

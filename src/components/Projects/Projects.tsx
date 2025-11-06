@@ -17,19 +17,19 @@ const Projects = () => {
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://brueilexgroup.com",
         },
+         {
+        image: ISBATGPA,
+        name: "ISBAT GPA Calculator", 
+        description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
+        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
+        link: "https://isbat-gpa-calculator.vercel.app/",
+        },
         {
         image: Vinniq,
         name: "Vinniq Media", 
         description: "Vinniq Media provides professional photography and videography for portraits, events and media productions creating beautiful, high-quality images and videos for every occasion, from personal projects to commercial ventures.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://vinniqmedia.com",
-        },
-        {
-        image: ISBATGPA,
-        name: "ISBAT GPA Calculator", 
-        description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
-        techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
-        link: "https://isbat-gpa-calculator.vercel.app/",
         },
         {
         image: Agrixapp,
