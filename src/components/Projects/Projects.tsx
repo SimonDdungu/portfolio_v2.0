@@ -33,8 +33,8 @@ const Projects = () => {
         },
         {
         image: Agrixapp,
-        name: "Agrix", 
-        description: "Agrix is an all-in-one platform that empowers farmers to sell produce, buy agro-inputs, access farming tips and track weather updates while allowing consumers to buy fresh, local food directly from the source.",
+        name: "AgriX", 
+        description: "AgriX is an all-in-one platform that empowers farmers to sell produce, buy agro-inputs, access farming tips and track weather updates while allowing consumers to buy fresh, local food directly from the source.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://agrixfarm.com/",
         },  
