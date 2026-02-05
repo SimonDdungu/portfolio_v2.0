@@ -1,5 +1,5 @@
 import React from 'react'
-import Agrixapp from '../../../public/images/projects/Agrixapp.png'
+import Agrixapp from '../../../public/images/projects/Agrixapp2.png'
 import PCA from '../../../public/images/projects/Pivosoftcodingacademy.png'
 import Brueilex from '../../../public/images/projects/Brueilexgroup.png'
 import Vinniq from '../../../public/images/projects/Vinniqmedia.png'
@@ -36,7 +36,7 @@ const Projects = () => {
         name: "Agrix", 
         description: "Agrix is an all-in-one platform that empowers farmers to sell produce, buy agro-inputs, access farming tips and track weather updates while allowing consumers to buy fresh, local food directly from the source.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
-        link: "https://agrixapp.com",
+        link: "https://agrixfarm.com/",
         },  
         
         {
