@@ -24,6 +24,7 @@ const Projects = () => {
         description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://isbat-gpa-calculator.vercel.app/",
+        type: "Web App" 
         },
         {
         image: QuickMeds,
@@ -31,6 +32,7 @@ const Projects = () => {
         description: `A pharmacy management system for tracking inventory, sales, and suppliers, ensuring stock control, preventing expired medication sales, and monitoring profits.\n\nLogin Details\n(Cashier) username: grace_dest, password: grace12345 \n(Technician) username: brian_mu, password: brianbrian`,
         techStack: [SiPython, SiDjango, SiPostgresql, SiNextdotjs, SiTypescript, SiGit, SiGithub],
         link: "https://quickmedsuganda.vercel.app/",
+        type: "Web App" 
         },
         {
         image: Vinniq,
@@ -95,7 +97,7 @@ const Projects = () => {
                             <div>
                                 <Link href={project.link} target="_blank" rel="noopener noreferrer" className='px-5 py-2 mt-5 bg-(--dark-blue) text-gray-200 rounded-lg
                                 hover:bg-blue-900 transition-all ease-in-out duration-300 '>
-                                Visit Website
+                                {project.type ? `Visit ${project.type}` : "Visit Website"}
                                 </Link>
                             </div>
                         </div>
