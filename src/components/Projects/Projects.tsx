@@ -4,7 +4,8 @@ import PCA from '../../../public/images/projects/Pivosoftcodingacademy.png'
 import Brueilex from '../../../public/images/projects/Brueilexgroup.png'
 import Vinniq from '../../../public/images/projects/Vinniqmedia.png'
 import ISBATGPA from "../../../public/images/projects/IsbatGPACalculator.png"
-import { SiNextdotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub, SiTypescript } from 'react-icons/si'
+import QuickMeds from "../../../public/images/projects/Quickmeds-1.png"
+import { SiNextdotjs, SiTailwindcss, SiJavascript, SiGit, SiGithub, SiTypescript, SiPython, SiDjango, SiPostgresql } from 'react-icons/si'
 import Link from 'next/link'
 import Image from 'next/image'
 
@@ -23,6 +24,13 @@ const Projects = () => {
         description: "A simple ISBAT GPA calculator designed for ISBAT university students to compute semester and cumulative GPA easily.",
         techStack: [SiNextdotjs, SiTypescript, SiTailwindcss, SiGit, SiGithub],
         link: "https://isbat-gpa-calculator.vercel.app/",
+        },
+        {
+        image: QuickMeds,
+        name: "QuickMeds", 
+        description: `A pharmacy management system for tracking inventory, sales, and suppliers, ensuring stock control, preventing expired medication sales, and monitoring profits.\n\nLogin Details\n(Cashier) username: grace_dest, password: grace12345 \n(Technician) username: brian_mu, password: brianbrian`,
+        techStack: [SiPython, SiDjango, SiPostgresql, SiNextdotjs, SiTypescript, SiGit, SiGithub],
+        link: "https://quickmedsuganda.vercel.app/",
         },
         {
         image: Vinniq,
@@ -69,7 +77,7 @@ const Projects = () => {
                             <div className='mb-5'>
                                 <h5 className='mb-3 font-semibold capitalize pb-2 border-b-2'>{project.name}</h5>
 
-                                <p className='text-sm font-light tracking-wide md:h-23 lg:h-20'>
+                                <p className='text-sm font-light tracking-wide md:min-h-23 lg:min-h-20 whitespace-pre-line'>
                                     {project.description}
                                 </p>
                             </div>
