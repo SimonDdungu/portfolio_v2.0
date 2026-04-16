@@ -2,6 +2,7 @@ import { useField } from "formik"
 
 interface inputfield {
 label: string,
+name: string,
 [key: string]: string | boolean
 }
 
